@@ -3,7 +3,7 @@ resource "aws_secretsmanager_secret" "secret" {
   recovery_window_in_days = 30
   policy = "{}"
 }
-resource "aws_secretsmanager_secret_version" "example" {
-  secret_id     = aws_secretsmanager_secret.secret.id
-  secret_string = jsonencode(var.secret_value)
-}
+# resource "aws_secretsmanager_secret_version" "example" {
+#   secret_id     = aws_secretsmanager_secret.secret.id
+#   secret_string = jsonencode(var.secret_value)
+# }
